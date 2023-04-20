@@ -8,6 +8,7 @@ ren:{system$[WIN;"move ";"mv "],pth[x]," ",pth y}
 here:{hsym`$system$[WIN;"cd";"pwd"]}
 \d .
 
+// This function adds a column to the database
 add1col:{[tabledir;colname;defaultvalue]
  if[not colname in ac:allcols tabledir;
   stdout"adding column ",(string colname)," (type ",(string type defaultvalue),") to `",string tabledir;
